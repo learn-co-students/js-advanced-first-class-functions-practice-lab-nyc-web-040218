@@ -24,17 +24,17 @@ function logDriversByHometown(drivers, location) {
   };
 };
 
-// function driversByRevenue(drivers) {
-//   return drivers.slice().sort((a, b) => a - b);
+function driversByRevenue(drivers) {
+  return drivers.slice().sort((a, b) => a.revenue - b.revenue);
+};
+
+// const compare = function (a, b) {
+//   return a.revenue - b.revenue;
 // };
 
-const compare = function (a, b) {
-  return a.revenue - b.revenue;
-};
-
-function driversByRevenue(drivers) {
-  return drivers.slice().sort(compare);
-};
+// function driversByRevenue(drivers) {
+//   return drivers.slice().sort(compare);
+// };
 
 const compareNames = function (a, b) {
   return (a.name).localeCompare(b.name);
