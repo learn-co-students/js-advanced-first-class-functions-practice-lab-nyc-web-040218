@@ -1,19 +1,27 @@
 // Code your solution in this file!
 
-const callbackName = function (el, i, drivers) {
-  console.log(el.name);
+const callbackName = function (driver, drivers) {
+  console.log(driver.name);
 };
 
 function logDriverNames(drivers) {
   drivers.forEach(callbackName);
 };
 
+// const logDriversByHometown = function (drivers, hometown) {
+//   drivers.forEach(function (driver) {
+//     if (driver.hometown === hometown) {
+//       console.log(driver.name);
+//     }
+//   });
+// };
+
 function logDriversByHometown(drivers, location) {
-  for (const el of drivers) {
-    if (el.hometown === location) {
-      console.log(el.name);
-    }
-  }
+  for (const driver of drivers) {
+    if (driver.hometown === location) {
+      console.log(driver.name);
+    };
+  };
 };
 
 // function driversByRevenue(drivers) {
